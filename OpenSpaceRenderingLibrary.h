@@ -1,0 +1,44 @@
+#define OPENSPACERENDERINGLIBRARY_API __declspec(dllexport)
+
+// This class is exported from the dll
+OPENSPACERENDERINGLIBRARY_API signed int GLI_DRV_bBeginScene();
+OPENSPACERENDERINGLIBRARY_API bool GLI_DRV_bEndScene();
+OPENSPACERENDERINGLIBRARY_API signed int GLI_DRV_bLockDevice(int * a1, int * a2);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_bPrepareForGliWindowed(HWND hWnd);
+OPENSPACERENDERINGLIBRARY_API bool GLI_DRV_bUnlockDevice();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_bWindowedModeIsOptimized();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_fn_lGetAllDisplayConfig(int(__cdecl* a1)(int, int, int, int, int));
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_fnl_EnumModes(LPVOID lpContext, int a2);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_hChangeMode(int a1, int xRight, int yBottom, int a4);
+OPENSPACERENDERINGLIBRARY_API signed int GLI_DRV_lGetDllInfo(const char *a1, char *a2);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_lGetSizeOfTexture(int a1);
+OPENSPACERENDERINGLIBRARY_API signed int GLI_DRV_lSetCommonData(const char * a1, int a2);
+OPENSPACERENDERINGLIBRARY_API signed int GLI_DRV_lSetCommonFct(const char * a1, int(__cdecl* a2)(int));
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vActivateGli(HWND hWnd, int a2);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vAddBlackPolygon(signed int a1, signed int a2, signed int a3, signed int a4);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vClearDevice(int a1, int a2, int a3);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vClearZBufferRegion();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vCloseDriver();
+OPENSPACERENDERINGLIBRARY_API void GLI_DRV_vComputeFogEffect();
+OPENSPACERENDERINGLIBRARY_API void GLI_DRV_vDoOpaqueTextureSelection(int a1);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vDownLoadTextures(int a1, int a2, int a3);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vFlipDevice();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vFlipDeviceWithSyncro();
+OPENSPACERENDERINGLIBRARY_API int * GLI_DRV_vGetStats(int * a1, int * a2);
+OPENSPACERENDERINGLIBRARY_API void GLI_DRV_vNoBlackPolygon();
+OPENSPACERENDERINGLIBRARY_API void GLI_DRV_vOptimizedWindowedMode();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vPrepareForGliFullScreen();
+OPENSPACERENDERINGLIBRARY_API long GLI_DRV_vReadaptDisplay();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vSendSingleLineToClip();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vSendSpriteToClip(int a1, int a2, int a3, int a4, int a5);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vSendSpriteToClipWithColors(int a1, int a2, int a3, int a4, float a5, int a6);
+OPENSPACERENDERINGLIBRARY_API void GLI_DRV_vSendSpriteToClipWithUV(int a1, int a2, int a3, int a4, float a5, int a6);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vSetClipWindow(float a1, int a2, int a3, int a4, int a5);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vSetZClip(float a1, int a2);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vUnLoadTextures();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_vWrite16bBitmapToBackBuffer(int a1, int a2, int a3, int a4, int a5, int a6, int a7);
+OPENSPACERENDERINGLIBRARY_API unsigned int GLI_DRV_xClearViewingList();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_xInitDriver(HWND hWnd, int a2, int xRight, int yBottom, int a5);
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_xSendElementTIToClip_TRIANGLES(int a1, int a2);
+OPENSPACERENDERINGLIBRARY_API unsigned int GLI_DRV_xSendListToViewport();
+OPENSPACERENDERINGLIBRARY_API int GLI_DRV_xSendSingleTriangleToClip_TRIANGLES(int a1, int a2, int a3);

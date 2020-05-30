@@ -1,0 +1,2 @@
+#define OPENSPACERENDERINGLIBRARY_API __declspec(dllexport)
+#define OPENSPACERENDERINGLIBRARY_API __declspec(dllimport)
